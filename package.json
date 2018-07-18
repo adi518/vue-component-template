@@ -1,25 +1,30 @@
 {
-  "name": "vue-stepper-component",
-  "version": "1.0.0",
-  "description": "A Vue.js Stepper component",
-  "author": "Adi Sahar",
+  "name": "vue-component-template",
+  "version": "0.0.0",
+  "description": "A Vue.js Component",
+  "author": "{{author}}",
   "main": "dist",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node_modules/.bin/webpack --config webpack.config.js",
     "dev": "node_modules/.bin/webpack --config webpack.config.js --watch",
     "prerelease": "npm run build && npm version patch",
+    "prerelease-minor": "npm run build && npm version minor",
+    "prerelease-major": "npm run build && npm version major",
+    "postrelease": "git push --follow-tags",
+    "postrelease-minor": "git push --follow-tags",
+    "postrelease-major": "git push --follow-tags",
     "release": "npm publish",
-    "postrelease": "git push --follow-tags"
+    "release-minor": "npm publish",
+    "release-major": "npm publish"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adi518/vue-stepper-component"
+    "url": "{{repository-url}}"
   },
   "bugs": {
-    "url": "https://github.com/adi518/vue-stepper-component/issues"
+    "url": "{{bugs-url}}"
   },
-  "license": "MIT",
   "peerDependencies": {
     "vue": "^2.x"
   },
