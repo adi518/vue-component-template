@@ -2,13 +2,16 @@
   "name": "vue-component-template",
   "version": "0.0.0",
   "description": "A Vue.js Component",
-  "author": "{{author}}",
+  "author": "{{ author }}",
   "private": true,
   "main": "dist",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node_modules/.bin/webpack --config webpack.config.js",
-    "dev": "node_modules/.bin/webpack --config webpack.config.js --watch",
+    "start": "node_modules/.bin/webpack --config webpack.config.js --watch",
+    "link": "cd ./docs && npm link {{ name }}",
+    "predocs": "npm run link",
+    "docs": "npm start --prefix ./docs",
     "prerelease-patch": "npm run build && npm version patch",
     "prerelease-minor": "npm run build && npm version minor",
     "prerelease-major": "npm run build && npm version major",
@@ -21,10 +24,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "{{repository-url}}"
+    "url": "{{ repository-url }}"
   },
   "bugs": {
-    "url": "{{bugs-url}}"
+    "url": "{{ bugs-url }}"
   },
   "peerDependencies": {
     "vue": "^2.x"

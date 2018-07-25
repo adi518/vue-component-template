@@ -2,9 +2,8 @@
 `npm install`
 
 # Development
-* Run `npm link` to install the component to your global `node_modules`.
-* Navigate to `./docs-src` and run `npm link <package-name>`.
-* Run `npm run dev` and `npm start` under `./docs-src`.
+* Run `npm start` to for component source.
+* Run `npm run docs` to for documentation source.
 
 # Build
 `npm run build`
