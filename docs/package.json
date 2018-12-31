@@ -19,7 +19,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-rc.8",
     "@vue/cli-plugin-eslint": "^3.0.0-rc.8",
-    "@vue/cli-service": "^3.0.0-rc.8",
+    "@vue/cli-service": "^3.2.2",
     "gh-pages": "^2.0.1",
     "vue-template-compiler": "^2.5.16"
   },
